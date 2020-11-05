@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    height: 90vh;
+    width: 100%;
+    background-image: url(../imagens/capa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+    margin: 45px 2% 45px 10%;
+}
+
+.logo img{
+    height: 30px;
+}
+
+.menu-mobile{
+    position: absolute;
+    background-color: white;
+    width: 92%;
+    text-align: center;
+    
+    margin: 0 50%;
+    transform: translateX(-50%);
+    top: 80px;
+}
+
+.menu-mobile li{
+    border-bottom: 1px solid black;
+    padding: 10px 0;   
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    
+}
+
+.menu-mobile ul{
+    list-style-type: none;
+    transition: 1s;
+    display: none;
+}
+
+.menu-botao{
+    display: none;
+}
+.menu{
+    float: right;
+    margin: 55px 10% 45px 0;
+}
+
+.menu ul{
+    list-style-type: none;
+    
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+.menu li{
+    float: left;
+    padding: 0 20px;
+}
+
+.chamada1{
+    float: right;
+    max-width: 800px;
+    margin: 140px 20%;
+}
+
+.chamada1 h2{
+    color: white;
+    font-weight: 300;
+    font-size: 55px;
+}
+
+.chamada1 p{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+/*chamada2*/
+
+.chamada2{
+    background-color: #472663;
+    width: 100%;
+    padding: 0 25% 0 20%;
+    height: 450px;
+    
+}
+
+.chamada2-texto h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-top: 5%;
+}
+
+.chamada2-texto p{
+    font-size: 16px;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+.chamada2-texto ul{
+    list-style-type:disc;
+    margin-left: 20px;
+}
+
+.chamada2-texto li{
+    padding-bottom: 5px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.chamada2-botao button{
+    background-color: #ff703e;
+    border-radius: 30px;
+    border: 0;
+    width: 170px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.chamada2-img img{
+    height: 500px;
+    width: 500px;
+    float: right;
+    margin-right: -380px;
+}
+
+.chamada2-img {
+    position: relative;
+    top: -50px;
+    left: -160px;
+    float: right;
+}
+
+.chamada2-texto{
+    width: 70%;
+    float: left;
+}
+/*
+.chamada2 .container{
+    background-color: seagreen;
+}*/
+
+.chamada3{
+    width: 100%;
+    height: 700px;
+    background-color: skyblue;
+}
+
+@media screen and (max-width: 900px){
+    .chamada1{
+        float: none;
+        text-align: center;
+        margin: 70px 5%;
+    }
+    
+    .chamada1 h2{
+        font-size: 35px;
+    }
+    
+    .chamada1 p{
+        float: none;
+        font-size: 15px;
+        margin: 70px 10%;
+    }
+
+/*chamada2*/
+.chamada2{
+    height: 380px;
+}
+.chamada2-texto h2{
+    font-size: 30px;
+}
+
+.chamada2-texto p{
+    font-size: 15px;
+}
+
+.chamada2-texto li{
+    font-size: 15px;
+    text-align: left;
+}
+
+.chamada2-texto ul{
+    display: inline-block;
+    text-align: center;
+}
+
+.chamada2-img img{
+    display: none;
+    height: 500px;
+    width: 0%;
+    float: none;
+}
+
+.chamada2-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    float: none;
+    display: none;
+    /*background-color: red;*/
+}
+
+.chamada2-texto{
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 800px){
+
+    .menu{
+        float: none;
+        display: none;
+    }
+    .menu-botao{
+        display: block;
+        height: 20px;
+        float: right;
+        margin-top: 50px;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    .menu-botao img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .menu-botao:hover + .menu-mobile ul{
+        display: block;
+    }
+
+    .menu-mobile:hover ul{
+        display: block;
+    }
+
+    
+}
