@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*HEADER*/
+.logo{
+    float: left;
+}
+
+header{
+    padding: 20px 2%;
+}
+header .menu{
+    float: right;
+}
+
+header .menu ul{
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+header .menu ul li{
+    float: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+header .menu li a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+
+/**/
+.menu-botao{
+    display: none;
+    margin: 10px 2% 0 0;
+    float: right;
+    cursor: pointer;
+}
+
+.menu-botao img{
+    width: 27px;
+}
+
+.menu-mobile{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 96%;
+    float: left;
+    background-color: white;
+    top: 65px;
+    pointer-events: none;
+    transition: opacity 1s linear;
+    
+}
+
+.menu-mobile ul{
+    list-style-type: none;
+    text-align: center;
+    
+    
+}
+
+.menu-mobile li{
+    padding: 5px;
+    border: 1px solid gray;
+}
+.menu-mobile li:nth-child(1){
+    border-top: 2px solid gray;
+}
+.menu-mobile li:last-child{
+    border-bottom: 2px solid gray;
+}
+
+.menu-mobile a{
+    text-decoration: none;
+}
+
+
+/** **/
+
+/** MOSAICO **/
+.mosaico-single{
+    width: calc(100% / 6);
+    float: left;
+}
+
+.img-mosaico {
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 3px solid white;
+    /*background-image: url(../imagens/img_perfil.png);*/
+}
+
+/** SERVICOS **/
+.servicos .container{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+.servicos .container .bloco{
+    float: left;
+    color: white;
+    text-align: center;
+}
+
+.servicos .container .bloco h2{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.servicos .container .bloco p{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.servicos .container .bloco:nth-child(1),
+.servicos .container .bloco:nth-child(3) {
+    width: 30%;
+    background-color: #576975;
+    padding: 50px 2%;
+
+    background-image: url(../imagens/icone_dente.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position-y: calc(100% - 5px);
+}
+
+.servicos .container .bloco:nth-child(2) {
+    width: 40%;
+    background-color: #688293;
+    padding: 80px 2%;
+}
+
+/** PERFIL **/
+.perfil .container{
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+.img-perfil{
+    float: left;
+    width: 40%;
+}
+
+.img-perfil img{
+    height: 100%;;
+    width: 100%;
+}
+
+.texto-perfil{
+    float: left;
+    width: 56%;
+    text-align: justify;
+    margin: 0 2%;
+}
+
+.texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+.texto-perfil p{
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/** VIDEOS **/
+
+.videos{
+    margin-top: 100px;
+}
+
+.box-video{
+    float: left;
+    width: 33.3%;
+    height: 30vh;
+    border: 1px solid white;
+    background-color: teal;
+}
+
+.box-video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/** TRATAMENTOS **/
+
+.tratamento{
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 50px;
+}
+
+.tratamento > .container > h2{
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 50px;
+    color: #698293;
+    font-size: 18px;
+}
+
+.coluna-tratamento{
+    width: 33.3%;
+    float: left;
+    padding: 0 1%;
+}
+
+.linha-tratamento h2{
+    color: #737373;
+    font-size: 18px;
+    margin-top: 45px;
+}
+
+.linha-tratamento p{
+    margin-top: 25px;
+    color: #b4b4b4;
+    font-size: 13px;
+}
+
+/** DEPOIMENTOS **/
+
+.depoimentos{
+    padding-bottom: 100px;
+}
+
+.depoimentos .container > h2{
+    margin: 30px 0;
+    padding-top: 50px;
+    color: #698293;
+    font-size: 18px;
+
+}
+
+.depoimentos .container p{
+    margin: 10px 0;
+    padding-top: 50px;
+    color: #999999;
+    font-size: 15px;
+}
+
+.depoimentos .container span{
+    position: relative;
+    top: -15px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.depoimentos .container{
+    max-width: 400px;
+    text-align: center;
+}
+
+/** SOCIAL **/
+
+.social .insta{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    line-height: 23px;
+    background-color: #98a5ae;
+    padding: 50px 0;
+}
+
+.social .face{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    line-height: 23px;
+    background-color: #576975;
+    padding: 50px 0;
+}
+
+.mosaico-social{
+    width: 100%;
+}
+
+.mosaico-social .mosaico-single-social{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: #ccc;
+    border: 5px solid white;
+}
+
+/** CONTATO **/
+
+.Contato .container > h2{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+    color: #698293;
+    font-size: 18px;
+
+}
+
+.Contato .container{
+    max-width: 650px;
+}
+
+.Contato{
+    margin-bottom: 100px;
+}
+
+.Contato .contato-input:first-child{
+    float: left;
+    width: 100%;
+}
+
+.Contato .contato-input:nth-child(4),
+.Contato .contato-input:nth-child(5){
+    float: left;
+    width: 100%;
+}
+.Contato .contato-input{
+    float: left;
+    width: 50%;
+    padding: 0 2%;
+}
+
+.Contato .contato-input input{
+    float: left;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.Contato p{
+    font-size: 15px;
+    color: #b4b4b4;
+    padding: 10px 0;
+}
+
+.Contato .contato-input textarea{
+    width: 100%;
+    height: 121px;
+}
+
+
+.contato-input input[type=submit]{
+    margin-top: 20px;
+    width: 15%;
+    border: 0;
+    background-color: #688293;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+footer{
+    background-color: #688293;
+    padding: 40px 2%;
+}
+
+.footer-single{
+    width: 33.3%;
+    float: left;
+}
+
+.footer-single h2{
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-single p{
+    margin-top: 8px;
+    color: white;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .footer-single{
+        width: 100%;
+        float: none;
+        display: inline-block;
+        text-align: center;
+        margin: 40px 50% 10px 50%;
+        transform: translateX(-50%);
+    }
+    
+
+    .servicos .container{
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 0px;
+    }
+
+    .servicos .container .bloco:nth-child(1),
+    .servicos .container .bloco:nth-child(3) {
+        width: 80%;
+        background-color: #576975;
+        padding: 50px 2%;
+    }
+
+    .servicos .container .bloco:nth-child(2) {
+        width: 90%;
+        background-color: #688293;
+        padding: 80px 2%;
+    }
+    
+
+    .menu{
+        display: none;
+    }
+
+    .menu-botao{
+        display: block;
+    }
+
+    .menu-botao:hover + .menu-mobile{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .menu-mobile:hover{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .box-video{
+        float: none;
+        margin: 10px 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 30vh;
+        border: 1px solid white;
+    }
+
+    
+    
+    
+}
+
+@media screen and (max-width: 600px){
+    .perfil .container{
+        margin-top: 20px;
+        max-width: 800px;
+    }
+        
+    .img-perfil{
+        float: none;
+        width: 50%;
+        margin: 0 50%;
+        transform: translateX(-50%);
+    }
+    
+    .img-perfil img{
+        height: 100%;;
+        width: 100%;
+    }
+    
+    .texto-perfil{
+        float: none;
+        width: 80%;
+        text-align: justify;
+        margin: 0 50%;
+        transform: translateX(-50%);
+    }
+
+    .social .mosaico-social .mosaico-single-social{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+    .mosaico-single-social:nth-child(1n+4){
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .mosaico-social .mosaico-single-social{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+    
+
+    .mosaico-single-social:nth-child(1n+7){
+        display: none;
+    }
+}
